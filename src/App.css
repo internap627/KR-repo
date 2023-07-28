@@ -52,7 +52,26 @@
   left: 50%; /* Positions the button horizontally in the middle */
   transform: translate(-50%, -50%); /* Centers the button precisely */
   z-index: 1; /* Place the button on top of the background image */
+  font-weight: bold;
   /* Add your specific styles for the button */
+}
+
+.header-footer {
+  background-color: white; /* Set the white strip background color */
+  position: absolute; /* Position the footer absolutely */
+  bottom: 0; /* Place the footer at the bottom of the header container */
+  left: 0; /* Adjust the position from the left if needed */
+  width: 100%; /* Make the footer span the entire width of the header container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px; /* Set your desired height for the footer */
+}
+
+.header-footer img {
+  /* Style the image inside the footer */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .modal {

@@ -22,6 +22,10 @@ const Header = () => {
         <i className="material-icons left">airplay</i>Play Video
       </button>
 
+      <div className="header-footer">
+        <img src="logo-kr2.png" alt="page logo" />
+      </div>
+
       {/* Modal */}
       {isModalOpen && (
         <div className="custom-modal">
