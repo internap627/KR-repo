@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; 
 }
 
-.App-link {
-  color: #61dafb;
+.candidate-avatar {
+  width: 110px; /* Set your desired width here */
+  height: auto; /* Height will adjust automatically to preserve aspect ratio */
+  margin: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav-mobile a {
+  color: rgb(73, 73, 73);
+  font-weight: 500;
+}
+
+.brand-logo {
+  height: 100%;
+}
+
+/* Header styles */
+.header {
+  position: relative;
+  padding: 1rem; /* Add padding as needed */
+  flex: 1; /* This will make the header take up the remaining space */
+  min-height: 100px; /* Set a minimum height for the header */
+  display: flex; /* Use Flexbox to align content vertically */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  /* Add any other styles you need for the header */
+}
+
+/* Background image styles */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/kr-siparia.jpeg'); /* Set the path to your background image */
+  background-size: cover; /* Adjust the background size to cover the entire container */
+  background-repeat: no-repeat;
+  background-position: center center; /* Center the background image */
+  z-index: -1; /* Move the background image behind other content */
+}
+
+/* Button styles */
+.header-button {
+  position: absolute !important;
+  top: 70%; /* Positions the button vertically in the middle */
+  left: 50%; /* Positions the button horizontally in the middle */
+  transform: translate(-50%, -50%); /* Centers the button precisely */
+  z-index: 1; /* Place the button on top of the background image */
+  /* Add your specific styles for the button */
 }
