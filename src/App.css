@@ -74,6 +74,26 @@
   max-height: 100%;
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials a {
+  margin-right: 20px; /* Adjust the spacing as per your preference */
+}
+
+/* Optional: Add some space to the left of the first icon */
+.socials a:first-child {
+  margin-left: 10px; /* Adjust the spacing as per your preference */
+}
+
+.socials img {
+  max-width: 40px; /* Adjust the size as per your preference */
+  height: auto; /* This will maintain the aspect ratio */
+  margin: 0 5px; /* Add some spacing between the icons */
+}
+
 .modal {
   width: 70%;
   max-width: 100%;
