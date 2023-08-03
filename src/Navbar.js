@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import M from 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css'; // Import Materialize CSS styles
 
-const Navbar = () => {
+const Navbar = ({setShowHeader}) => {
   useEffect(() => {
     // Initialize the sidenav
     const sidenav = document.querySelector('.sidenav');
@@ -37,10 +38,11 @@ const Navbar = () => {
           <ul id="nav-mobile" className="right hide-on-med-and-down white">
             {/* Add your navigation links here */}
             <li>
-              <a href="#home">Home</a>
+              <Link onClick={() => setShowHeader(true)} to="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              {/* <a href="#about">About</a> */}
+              <Link onClick={() => setShowHeader(false)} to="/about">About</Link>
             </li>
             <li>
               <a href="#press">Press</a>
