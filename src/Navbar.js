@@ -45,7 +45,7 @@ const Navbar = ({setShowHeader}) => {
               <Link onClick={() => setShowHeader(false)} to="/about">About</Link>
             </li>
             <li>
-              <a href="#press">Press</a>
+              <Link onClick={() => setShowHeader(false)} to="/newsroom">Newsroom</Link>
             </li>
             <li>
               <a href="#contact">Contact</a>

@@ -9,6 +9,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import About from "./About";
+import Newsroom from "./Newsroom";
 import Footer from "./Footer";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={showHeader ? <Header /> : null} />
           <Route path="/about" element={<About />} />
+          <Route path="/newsroom" element={<Newsroom />} />
         </Routes>
 
         <Footer />

@@ -1,0 +1,44 @@
+/* Newsroom.css */
+
+.newsroom-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .newsroom-title {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image img {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-action a {
+    color: #039be5;
+    font-weight: 500;
+  }
+  
+  .card-action a:hover {
+    text-decoration: underline;
+  }
+  
