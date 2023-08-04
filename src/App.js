@@ -11,6 +11,7 @@ import Header from "./Header";
 import About from "./About";
 import Newsroom from "./Newsroom";
 import Footer from "./Footer";
+import Gallery from "./Gallery";
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={showHeader ? <Header /> : null} />
           <Route path="/about" element={<About />} />
           <Route path="/newsroom" element={<Newsroom />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
 
         <Footer />
