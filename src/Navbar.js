@@ -59,13 +59,16 @@ const Navbar = ({setShowHeader}) => {
 
       <ul id="slide-out" className="sidenav">
         <li>
-          <a href="#home">Home</a>
+        <Link onClick={() => setShowHeader(true)} to="/">Home</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+        <Link onClick={() => setShowHeader(false)} to="/about">About</Link>
         </li>
         <li>
-          <a href="#press">Press</a>
+        <Link onClick={() => setShowHeader(false)} to="/newsroom">Newsroom</Link>
+        </li>
+        <li>
+        <Link onClick={() => setShowHeader(false)} to="/gallery">Gallery</Link>
         </li>
         <li>
           <a href="#contact">Contact</a>
