@@ -25,16 +25,16 @@ const Navbar = ({setShowHeader}) => {
       <div className="nav-wrapper white">
         <div className="container nav-container">
           {/* Replace "Politician's Name" with the actual name */}
-          <a href="#" className="brand-logo">
+          <Link onClick={() => setShowHeader(true)} to="/" className="brand-logo">
             <img
               src="/logo-kr1.jpeg" // Relative path to the image from the public folder
               alt="Kwasi Robinson" // Add appropriate alt text for accessibility
               className="candidate-avatar" // Add any additional class or styling if required
             />
-          </a>
-          <a href="#" data-target="slide-out" className="sidenav-trigger">
+          </Link>
+          <Link data-target="slide-out" className="sidenav-trigger">
             <i className="material-icons grey-text">menu</i>
-          </a>
+          </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down white">
             {/* Add your navigation links here */}
             <li>
