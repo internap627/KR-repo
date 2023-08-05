@@ -1,31 +1,35 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
-import M from 'materialize-css';
-import 'materialize-css/dist/css/materialize.min.css'; // Import Materialize CSS styles
+import { Link } from "react-router-dom";
+import M from "materialize-css";
+import "materialize-css/dist/css/materialize.min.css"; // Import Materialize CSS styles
+import "./Navbar.css";
 
-const Navbar = ({setShowHeader}) => {
+const Navbar = ({ setShowHeader }) => {
   useEffect(() => {
     // Initialize the sidenav
-    const sidenav = document.querySelector('.sidenav');
+    const sidenav = document.querySelector(".sidenav");
     M.Sidenav.init(sidenav, {});
 
     // Optionally, you can also close the sidenav on item click
-    const sidenavLinks = document.querySelectorAll('.sidenav li a');
-    sidenavLinks.forEach(link => {
-      link.addEventListener('click', () => {
+    const sidenavLinks = document.querySelectorAll(".sidenav li a");
+    sidenavLinks.forEach((link) => {
+      link.addEventListener("click", () => {
         const sidenavInstance = M.Sidenav.getInstance(sidenav);
         sidenavInstance.close();
       });
     });
   }, []);
 
-
   return (
     <nav>
       <div className="nav-wrapper white">
         <div className="container nav-container">
           {/* Replace "Politician's Name" with the actual name */}
-          <Link onClick={() => setShowHeader(true)} to="/" className="brand-logo">
+          <Link
+            onClick={() => setShowHeader(true)}
+            to="/"
+            className="brand-logo"
+          >
             <img
               src="/logo-kr1.jpeg" // Relative path to the image from the public folder
               alt="Kwasi Robinson" // Add appropriate alt text for accessibility
@@ -38,17 +42,25 @@ const Navbar = ({setShowHeader}) => {
           <ul id="nav-mobile" className="right hide-on-med-and-down white">
             {/* Add your navigation links here */}
             <li>
-              <Link onClick={() => setShowHeader(true)} to="/">Home</Link>
+              <Link onClick={() => setShowHeader(true)} to="/">
+                Home
+              </Link>
             </li>
             <li>
               {/* <a href="#about">About</a> */}
-              <Link onClick={() => setShowHeader(false)} to="/about">About</Link>
+              <Link onClick={() => setShowHeader(false)} to="/about">
+                About
+              </Link>
             </li>
             <li>
-              <Link onClick={() => setShowHeader(false)} to="/newsroom">Newsroom</Link>
+              <Link onClick={() => setShowHeader(false)} to="/newsroom">
+                Newsroom
+              </Link>
             </li>
             <li>
-              <Link onClick={() => setShowHeader(false)} to="/gallery">Gallery</Link>
+              <Link onClick={() => setShowHeader(false)} to="/gallery">
+                Gallery
+              </Link>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -59,19 +71,30 @@ const Navbar = ({setShowHeader}) => {
 
       <ul id="slide-out" className="sidenav">
         <li>
-        <Link onClick={() => setShowHeader(true)} to="/">Home</Link>
+          <div className="logo-container">
+            <img src="logo-kr1.jpeg" alt="Logo" className="logo" />
+          </div>
+        </li>
+        <li className="divider"></li>
+        <li>
+          <Link onClick={() => setShowHeader(true)} to="/">
+            <i className="material-icons">home</i> Home
+          </Link>
         </li>
         <li>
-        <Link onClick={() => setShowHeader(false)} to="/about">About</Link>
+          <Link onClick={() => setShowHeader(false)} to="/about">
+            <i className="material-icons">person_pin</i> About
+          </Link>
         </li>
         <li>
-        <Link onClick={() => setShowHeader(false)} to="/newsroom">Newsroom</Link>
+          <Link onClick={() => setShowHeader(false)} to="/newsroom">
+            <i className="material-icons">description</i> Newsroom
+          </Link>
         </li>
         <li>
-        <Link onClick={() => setShowHeader(false)} to="/gallery">Gallery</Link>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
+          <Link onClick={() => setShowHeader(false)} to="/gallery">
+            <i className="material-icons">photo_camera</i> Gallery
+          </Link>
         </li>
       </ul>
     </nav>
