@@ -1,36 +1,35 @@
-import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-import "./App.css";
-import Navbar from "./Navbar";
-import Header from "./Header";
-import About from "./About";
-import Newsroom from "./Newsroom";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Navbar from './Navbar';
+import Header from './Header';
+import About from './About';
+import Newsroom from './Newsroom';
+import Gallery from './Gallery';
+import Footer from './Footer';
 
 function App() {
-  const [showHeader, setShowHeader] = useState(true);
-
   return (
     <Router>
       <div className="App">
-        <Navbar setShowHeader={setShowHeader} />
-        {/* {showHeader && <Header />} */}
-
-        <Routes>
-          <Route path="/" element={showHeader ? <Header /> : null} />
-          <Route path="/about" element={<About />} />
-          <Route path="/newsroom" element={<Newsroom />} />
-          <Route path="/gallery" element={<Gallery />} />
-        </Routes>
-
+        <Navbar />
+        <AppRoutes />
         <Footer />
       </div>
     </Router>
+  );
+}
+
+function AppRoutes() {
+  const location = useLocation();
+  const showHeader = location.pathname === '/';
+
+  return (
+    <Routes>
+      <Route path="/" element={showHeader ? <Header /> : null} />
+      <Route path="/about" element={<About />} />
+      <Route path="/newsroom" element={<Newsroom />} />
+      <Route path="/gallery" element={<Gallery />} />
+    </Routes>
   );
 }
 
