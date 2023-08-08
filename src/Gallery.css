@@ -4,6 +4,8 @@
   
   .carousel-title {
     text-align: center;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
   }
   
   .carousel {

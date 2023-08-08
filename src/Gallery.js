@@ -21,8 +21,9 @@ const Gallery = () => {
     <div className="gallery-container">
       <div className="row">
         <div className="col s12">
+          <div className="carousel-container">
+          <h4 className="carousel-title">Leaders In Service</h4>
           <div id="carousel1" className="carousel">
-            {/* <h4 className="carousel-title">Leaders in Service</h4> */}
             <a className="carousel-item" href="#one!">
               <img src="leaders/ls01.jpeg" alt="Slide 1" />
             </a>
@@ -45,12 +46,14 @@ const Gallery = () => {
               <img src="leaders/ls07.jpeg" alt="Slide 7" />
             </a>
           </div>
+          </div>
         </div>
       </div>
       <div className="row">
         <div className="col s12">
+          <div className="carousel-container">
+          <h4 className="carousel-title">Man On The Ground</h4>
           <div id="carousel2" className="carousel">
-            {/* <h4 className="carousel-title">Man On The Ground</h4> */}
             <a className="carousel-item" href="#eight!">
               <img src="MOTG/motg01.jpeg" alt="Slide 8" />
             </a>
@@ -69,6 +72,7 @@ const Gallery = () => {
             <a className="carousel-item" href="#thirteen!">
               <img src="MOTG/motg06.jpeg" alt="Slide 13" />
             </a>
+          </div>
           </div>
         </div>
       </div>
