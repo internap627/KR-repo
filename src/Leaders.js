@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import M from "materialize-css"; 
 import "./Carousel.css";
 
-const Gallery = () => {
+const Leaders = () => {
   useEffect(() => {
     const secondCarouselElem = document.querySelector("#carousel2");
     M.Carousel.init(secondCarouselElem, {
@@ -18,7 +18,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="gallery-container">
+    <div className="main-container">
       <div className="row">
         <div className="col s12">
           <div className="carousel-container">
@@ -49,35 +49,8 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col s12">
-          <div className="carousel-container">
-          <h4 className="carousel-title">Man On The Ground</h4>
-          <div id="carousel2" className="carousel">
-            <a className="carousel-item" href="#eight!">
-              <img src="MOTG/motg01.jpeg" alt="Slide 8" />
-            </a>
-            <a className="carousel-item" href="#nine!">
-              <img src="MOTG/motg02.jpeg" alt="Slide 9" />
-            </a>
-            <a className="carousel-item" href="#ten!">
-              <img src="MOTG/motg03.jpeg" alt="Slide 10" />
-            </a>
-            <a className="carousel-item" href="#eleven!">
-              <img src="MOTG/motg04.jpeg" alt="Slide 11" />
-            </a>
-            <a className="carousel-item" href="#twelve!">
-              <img src="MOTG/motg05.jpeg" alt="Slide 12" />
-            </a>
-            <a className="carousel-item" href="#thirteen!">
-              <img src="MOTG/motg06.jpeg" alt="Slide 13" />
-            </a>
-          </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default Gallery;
+export default Leaders;

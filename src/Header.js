@@ -1,46 +1,67 @@
-import React, { useState } from 'react';
-import sampleVideo from './videos/kr-video.mp4';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
-    <header className="header">
-      <div className="background-image"></div>
-      <button
-        className="header-button waves-effect waves-light white red-text btn"
-        onClick={openModal}
-      >
-        <i className="material-icons left">airplay</i>Play Video
-      </button>
-
-      <div className="header-footer">
-        <img src="logo-kr2.png" alt="page logo" />
-      </div>
-
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="custom-modal">
-          <div className="modal-content">
-            <video controls width="100%" height="auto" autoPlay>
-              <source src={sampleVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <button className="modal-close" onClick={closeModal}>
-            Close
-          </button>
+    <div className="header-container">
+      <div className="row">
+        <div className="col s10 m6 l3">
+          <Link to="/leaders">
+            <div className="card">
+              <div className="card-image">
+                <img src="leaders/ls01.jpeg" alt="Article 1" />
+                <span className="card-title">Leaders In Service</span>
+              </div>
+              <div className="card-content">
+                <p>View Images</p>
+              </div>
+            </div>
+          </Link>
         </div>
-      )}
-    </header>
+
+        <div className="col s10 m6 l3">
+          <Link to="/motg">
+            <div className="card">
+              <div className="card-image">
+                <img src="motg/motg01.jpeg" alt="Article 1" />
+                <span className="card-title">Man On The Ground</span>
+              </div>
+              <div className="card-content">
+                <p>View Images</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="col s10 m6 l3">
+          <Link to="/market">
+            <div className="card">
+              <div className="card-image">
+                <img src="market01.jpeg" alt="Article 1" />
+                <span className="card-title">Tunapuna Market</span>
+              </div>
+              <div className="card-content">
+                <p>View Images</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="col s10 m6 l3">
+          <Link to="/lge2023">
+            <div className="card">
+              <div className="card-image">
+                <img src="lge2023/lge01.jpeg" alt="Article 1" />
+                <span className="card-title">LGE 2023</span>
+              </div>
+              <div className="card-content">
+                <p>View Images</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

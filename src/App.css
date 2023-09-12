@@ -20,7 +20,7 @@
 }
 
 /* Header styles */
-.header {
+.header-container {
   position: relative;
   padding: 1rem; /* Add padding as needed */
   flex: 1; /* This will make the header take up the remaining space */
@@ -31,47 +31,28 @@
   /* Add any other styles you need for the header */
 }
 
-/* Background image styles */
-.background-image {
+.card {
+  max-width: 400px;
+}
+
+.card-image {
+  height: 300px; /* Set a fixed height for the card image container */
+  /* width: 300px; */
+  position: relative; /* Necessary for positioning the span tag */
+}
+
+.card-image img {
+  height: 100%; /* Set the image height to 100% of the parent container */
+  width: 100%; /* Maintain aspect ratio */
+}
+
+.card-title {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/kr-siparia.jpeg'); /* Set the path to your background image */
-  background-size: cover; /* Adjust the background size to cover the entire container */
-  background-repeat: no-repeat;
-  background-position: center center; /* Center the background image */
-  z-index: -1; /* Move the background image behind other content */
-}
-
-/* Button styles */
-.header-button {
-  position: absolute !important;
-  top: 70%; /* Positions the button vertically in the middle */
-  left: 50%; /* Positions the button horizontally in the middle */
-  transform: translate(-50%, -50%); /* Centers the button precisely */
-  z-index: 1; /* Place the button on top of the background image */
-  font-weight: bold;
-  /* Add your specific styles for the button */
-}
-
-.header-footer {
-  background-color: white; /* Set the white strip background color */
-  position: absolute; /* Position the footer absolutely */
-  bottom: 0; /* Place the footer at the bottom of the header container */
-  left: 0; /* Adjust the position from the left if needed */
-  width: 100%; /* Make the footer span the entire width of the header container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75px; /* Set your desired height for the footer */
-}
-
-.header-footer img {
-  /* Style the image inside the footer */
-  max-width: 100%;
-  max-height: 100%;
+  bottom: 10px; /* Adjust this value as needed to position the text */
+  left: 10px; /* Adjust this value as needed to position the text */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better readability */
+  color: white; /* Optional: Set the text color */
+  padding: 5px 10px; /* Optional: Add padding to the text */
 }
 
 .socials {
@@ -167,4 +148,15 @@
 
 .about-paragraph {
   margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col {
+    margin: 0 !important;
+  }
 }
