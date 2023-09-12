@@ -150,6 +150,10 @@
   margin-bottom: 20px;
 }
 
+footer:last-child {
+  margin-top: auto; /* Push the last item to the very end */
+}
+
 @media (max-width: 600px) {
   .row {
     display: flex;
