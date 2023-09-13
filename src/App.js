@@ -10,6 +10,7 @@ import Leaders from './Leaders';
 import Motg from './MOTG';
 import Market from './Market';
 import Lge2023 from './Lge2023';
+import Teamup2023 from './Teamup2023';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function AppRoutes() {
       <Route path="/motg" element={<Motg />} />
       <Route path="/market" element={<Market />} />
       <Route path="/lge2023" element={<Lge2023 />} />
+      <Route path="/teamup2023" element={<Teamup2023 />} />
     </Routes>
   );
 }

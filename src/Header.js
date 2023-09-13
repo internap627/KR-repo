@@ -60,6 +60,20 @@ const Header = () => {
             </div>
           </Link>
         </div>
+
+        <div className="col s10 m6 l3">
+          <Link to="/teamup2023">
+            <div className="card">
+              <div className="card-image">
+                <img src="teamup2023/teamup01.jpeg" alt="Article 1" />
+                <span className="card-title">Team-up 2 Clean-up 2023</span>
+              </div>
+              <div className="card-content">
+                <p>View Images</p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

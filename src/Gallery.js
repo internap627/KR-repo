@@ -4,6 +4,24 @@ import "./Carousel.css";
 
 const Gallery = () => {
   useEffect(() => {
+    const fifthCarouselElem = document.querySelector("#carousel5");
+    M.Carousel.init(fifthCarouselElem, {
+      indicators: true,
+      padding: 200,
+    });
+
+    const forthCarouselElem = document.querySelector("#carousel4");
+    M.Carousel.init(forthCarouselElem, {
+      indicators: true,
+      padding: 200,
+    });
+
+    const thirdCarouselElem = document.querySelector("#carousel3");
+    M.Carousel.init(thirdCarouselElem, {
+      indicators: true,
+      padding: 200,
+    });
+
     const secondCarouselElem = document.querySelector("#carousel2");
     M.Carousel.init(secondCarouselElem, {
       indicators: true,
@@ -71,6 +89,96 @@ const Gallery = () => {
             </a>
             <a className="carousel-item" href="#thirteen!">
               <img src="MOTG/motg06.jpeg" alt="Slide 13" />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col s12">
+          <div className="carousel-container">
+          <h4 className="carousel-title">Tunapuna Market</h4>
+          <div id="carousel3" className="carousel">
+            <a className="carousel-item" href="#one!">
+              <img src="market01.jpeg" alt="Slide 1" />
+            </a>
+            <a className="carousel-item" href="#two!">
+              <img src="/market/market02.jpeg" alt="Slide 2" />
+            </a>
+            <a className="carousel-item" href="#three!">
+              <img src="/market/market03.jpeg" alt="Slide 3" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="/market/market04.jpeg" alt="Slide 4" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="/market/market05.jpeg" alt="Slide 5" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="/market/market06.jpeg" alt="Slide 6" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="/market/market07.jpeg" alt="Slide 7" />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col s12">
+          <div className="carousel-container">
+          <h4 className="carousel-title">Local Goverment Elections 2023</h4>
+          <div id="carousel4" className="carousel">
+            <a className="carousel-item" href="#one!">
+              <img src="lge2023/lge01.jpeg" alt="Slide 1" />
+            </a>
+            <a className="carousel-item" href="#two!">
+              <img src="lge2023/lge02.jpeg" alt="Slide 2" />
+            </a>
+            <a className="carousel-item" href="#three!">
+              <img src="lge2023/lge03.jpeg" alt="Slide 3" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="lge2023/lge04.jpeg" alt="Slide 4" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="lge2023/lge05.jpeg" alt="Slide 5" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="lge2023/lge06.jpeg" alt="Slide 6" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="lge2023/lge07.jpeg" alt="Slide 7" />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col s12">
+          <div className="carousel-container">
+          <h4 className="carousel-title">Team-up To Clean-up 2023</h4>
+          <div id="carousel5" className="carousel">
+            <a className="carousel-item" href="#one!">
+              <img src="teamup2023/teamup01.jpeg" alt="Slide 1" />
+            </a>
+            <a className="carousel-item" href="#two!">
+              <img src="teamup2023/teamup02.jpeg" alt="Slide 2" />
+            </a>
+            <a className="carousel-item" href="#three!">
+              <img src="teamup2023/teamup03.jpeg" alt="Slide 3" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="teamup2023/teamup04.jpeg" alt="Slide 4" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="teamup2023/teamup05.jpeg" alt="Slide 5" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="teamup2023/teamup06.jpeg" alt="Slide 6" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="teamup2023/teamup07.jpeg" alt="Slide 7" />
             </a>
           </div>
           </div>
