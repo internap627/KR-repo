@@ -65,7 +65,7 @@ const Header = () => {
           <Link to="/teamup2023">
             <div className="card">
               <div className="card-image">
-                <img src="teamup2023/teamup01.jpeg" alt="Article 1" />
+                <img src="teamup2023/teamup00.jpg" alt="Article 1" />
                 <span className="card-title">Team-up 2 Clean-up 2023</span>
               </div>
               <div className="card-content">

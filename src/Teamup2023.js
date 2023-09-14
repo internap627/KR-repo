@@ -25,7 +25,7 @@ const Teamup2023 = () => {
           <h4 className="carousel-title">Team-up To Clean-up 2023</h4>
           <div id="carousel1" className="carousel">
             <a className="carousel-item" href="#one!">
-              <img src="teamup2023/teamup01.jpeg" alt="Slide 1" />
+              <img src="teamup2023/teamup00.jpg" alt="Slide 1" />
             </a>
             <a className="carousel-item" href="#two!">
               <img src="teamup2023/teamup02.jpeg" alt="Slide 2" />
