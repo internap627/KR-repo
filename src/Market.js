@@ -36,14 +36,11 @@ const Market = () => {
             <a className="carousel-item" href="#four!">
               <img src="/market/market04.jpeg" alt="Slide 4" />
             </a>
-            <a className="carousel-item" href="#four!">
+            <a className="carousel-item" href="#five!">
               <img src="/market/market05.jpeg" alt="Slide 5" />
             </a>
-            <a className="carousel-item" href="#four!">
+            <a className="carousel-item" href="#six!">
               <img src="/market/market06.jpeg" alt="Slide 6" />
-            </a>
-            <a className="carousel-item" href="#four!">
-              <img src="/market/market07.jpeg" alt="Slide 7" />
             </a>
           </div>
           </div>
