@@ -11,9 +11,9 @@ const About = () => {
         <h2 className="about-heading">Kwasi J Robinson</h2>
         <p className="about-paragraph">
           From the heart of La Horquetta, a dedicated and compassionate leader
-          emerges, embodying the values of family, service, and progress. Meet
-          Kwasi Robinson, a dynamic force in the political arena, whose journey
-          from a young, aspiring dreamer to man-on-the-ground has been nothing
+          emerges, embodying the values of family, service, and progress. 
+          Meet <strong>Kwasi Robinson</strong>, a dynamic force in the political arena, whose journey
+          from a young, aspiring dreamer to the <strong>Man-On-The-Ground</strong> has been nothing
           short of remarkable.
         </p>
         <p className="about-paragraph">
@@ -36,10 +36,10 @@ const About = () => {
         </p>
         <p className="about-paragraph">
           Recognizing his exceptional leadership skills, Kwasi Robinson was
-          appointed chairman of the Tunapuna Piarco Rigional Corporation. In
-          this role, he exhibits a remarkable ability to navigate the
+          appointed Chairman of the Tunapuna Piarco Rigional Corporation. In
+          this role, he exhibited a remarkable ability to navigate the
           complexities of governance, ensuring that the Corporation's resources
-          are managed efficiently and responsibly. His commitment to
+          were managed efficiently and responsibly. His commitment to
           transparency and accountability has solidified his reputation as a
           leader of integrity.
         </p>
