@@ -4,6 +4,12 @@ import "./Carousel.css";
 
 const Gallery = () => {
   useEffect(() => {
+    const sixthCarouselElem = document.querySelector("#carousel6");
+    M.Carousel.init(sixthCarouselElem, {
+      indicators: true,
+      padding: 200,
+    });
+
     const fifthCarouselElem = document.querySelector("#carousel5");
     M.Carousel.init(fifthCarouselElem, {
       indicators: true,
@@ -176,6 +182,30 @@ const Gallery = () => {
             </a>
             <a className="carousel-item" href="#four!">
               <img src="teamup2023/teamup07.jpeg" alt="Slide 7" />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col s12">
+          <div className="carousel-container">
+          <h4 className="carousel-title">Youth Awards 2023</h4>
+          <div id="carousel6" className="carousel">
+            <a className="carousel-item" href="#one!">
+              <img src="awards2023/awards01.jpg" alt="Slide 1" />
+            </a>
+            <a className="carousel-item" href="#two!">
+              <img src="awards2023/awards02.jpg" alt="Slide 2" />
+            </a>
+            <a className="carousel-item" href="#three!">
+              <img src="awards2023/awards03.jpg" alt="Slide 3" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="awards2023/awards04.jpg" alt="Slide 4" />
+            </a>
+            <a className="carousel-item" href="#four!">
+              <img src="awards2023/awards05.jpg" alt="Slide 5" />
             </a>
           </div>
           </div>
