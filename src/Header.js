@@ -74,6 +74,20 @@ const Header = () => {
             </div>
           </Link>
         </div>
+
+        <div className="col s10 m6 l3">
+          <Link to="/awards2023">
+            <div className="card">
+              <div className="card-image">
+                <img src="awards2023/awards01.jpg" alt="Article 1" />
+                <span className="card-title">Youth Awards 2023</span>
+              </div>
+              <div className="card-content">
+                <p>View Images</p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
